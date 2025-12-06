@@ -6,6 +6,10 @@ const https = require("https");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+process.env.PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD = "0";
+process.env.PLAYWRIGHT_BROWSERS_PATH = "/opt/render/.cache/ms-playwright";
+
+
 // 👉 Paste your Render URL here (or set env variable)
 const SELF_URL = "https://itinerary-playwright.onrender.com"
 
