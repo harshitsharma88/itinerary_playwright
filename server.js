@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // 👉 Paste your Render URL here (or set env variable)
-const SELF_URL = process.env.RENDER_SERVICE_URL || "https://your-render-url.onrender.com";
+const SELF_URL = "https://itinerary-playwright.onrender.com"
 
 app.use(express.json({ limit: "100mb" }));
 app.use(express.text({ type: "text/html", limit: "100mb" }));
